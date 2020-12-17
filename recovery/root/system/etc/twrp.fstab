@@ -25,5 +25,5 @@ odm		/odm		ext4							display="Odm";logical,first_stage_mount
 /prism_image	emmc		/dev/block/bootdevice/by-name/prism			flags=backup=1;flashimg;display="Prism Image"
 
 # Removable storage
-/external_sd	vfat		/dev/block/mmcblk0p1	/dev/block/mmcblk0		flags=storage;wipeingui;removable
-/usb-otg	vfat		/dev/block/sdf1	/dev/block/sdf				flags=display="USB-OTG";storage;wipeingui;removable
+/external_sd	vfat		/dev/block/mmcblk1p1	/dev/block/mmcblk1		flags=storage;wipeingui;removable
+/usb-otg	auto		/dev/block/sda1	/dev/block/sda				flags=display="USB-OTG";storage;wipeingui;removable
